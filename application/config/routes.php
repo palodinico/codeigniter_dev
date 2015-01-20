@@ -43,6 +43,14 @@ $route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';
 
+$route['blog/(:any)'] = 'blog/$1';
+$route['blog'] = 'blog';
+
+$route['products/(:any)'] = 'products/$1';
+$route['products'] = 'products';
+
+
+
 //$route['default_controller'] = "welcome";
 $route['default_controller'] = "pages/view";
 $route['(:any)'] = 'pages/view/$1';
