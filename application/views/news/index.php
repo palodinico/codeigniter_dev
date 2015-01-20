@@ -1,9 +1,7 @@
-<?php foreach ($news as $news_item): ?>
-
-  <h2><?php echo $news_item['title'] ?></h2>
+{news}
+  <h2>{title}</h2>
   <div class="main">
-    <?php echo $news_item['text'] ?>
+    {text}
   </div>
-  <p><a href="news/<?php echo $news_item['slug'] ?>">View article (<?php echo $news_item['slug'] ?>)</a></p>
-
-<?php endforeach ?>
+  <p><a href="news/{slug}">View</a></p>
+{/news}
